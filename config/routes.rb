@@ -5,8 +5,8 @@ YamyamE::Application.routes.draw do
   get "foods/write"
   post "foods/write_complete"
   get "foods/edit/:id" => 'foods#edit'
-  post "foods/edit_complete"
-  get "foods/delete_complete"
+  get "foods/edit_complete"
+  get "foods/delete_complete/:id" => 'foods#delete_complete'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
